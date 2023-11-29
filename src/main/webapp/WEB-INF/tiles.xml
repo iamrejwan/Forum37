@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE tiles-definitions PUBLIC  
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"  
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">          
+<tiles-definitions>  
+ 
+    <!-- Base Define -->
+    <definition name="base.definition" template="/WEB-INF/layouts/layout.jsp">  
+        <put-attribute name="title" value="" />  
+        <put-attribute name="header" value="/WEB-INF/basefragments/header.jsp" />  
+        <put-attribute name="body" value="" />  
+        <put-attribute name="footer" value="/WEB-INF/basefragments/footer.jsp" />  
+    </definition>  
+ 
+ 	<!-- Home Page  -->
+    <definition name="home" extends="base.definition">  
+        <put-attribute name="title" value="Home" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/home.jsp" />  
+    </definition>   
+    
+     	<!-- Registration Page  -->
+    <definition name="registration" extends="base.definition">  
+        <put-attribute name="title" value="Registration" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/registration.jsp" />  
+    </definition>  
+       
+         <!-- Login Page  -->
+    <definition name="login" extends="base.definition">  
+        <put-attribute name="title" value="Login" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/login.jsp" />  
+    </definition> 
+    
+   
+    <!-- User List View  -->
+    <definition name="userlist" extends="base.definition">  
+        <put-attribute name="title" value="User View List" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/userlistview.jsp" />  
+    </definition> 
+    
+       <!-- Category View  -->
+    <definition name="category" extends="base.definition">  
+        <put-attribute name="title" value="Category View" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/categoryview.jsp" />  
+    </definition>
+    
+        <!-- Category List View  -->
+    <definition name="categorylist" extends="base.definition">  
+        <put-attribute name="title" value="Category List View" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/categorylistview.jsp" />  
+    </definition>
+    
+        <!-- Blog View  -->
+    <definition name="blog" extends="base.definition">  
+        <put-attribute name="title" value="News View" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/blogview.jsp" />  
+    </definition>
+    
+        <!-- Blog List View  -->
+    <definition name="bloglist" extends="base.definition">  
+        <put-attribute name="title" value="News List View" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/bloglistview.jsp" />  
+    </definition>
+     
+     
+     
+         <!-- Blog List View  -->
+    <definition name="viewblog" extends="base.definition">  
+        <put-attribute name="title" value="view news" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/viewblog.jsp" />  
+    </definition>
+    
+   
+</tiles-definitions> 
